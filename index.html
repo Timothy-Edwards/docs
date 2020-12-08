@@ -1323,7 +1323,7 @@
                         </li>
                     </ul>
                   <li>
-                    <a href="#object-budgets" class="toc-h2 toc-link" data-title="Object Budgets">Object Budgets</a>
+                    <a href="#object-budgets-yeah-again" class="toc-h2 toc-link" data-title="Object Budgets yeah again">Object Budgets yeah again</a>
                   </li>
                     <ul class="toc-list-h3">
                         <li>
@@ -7881,7 +7881,7 @@ values, for a given company. This object contains:</p>
 </tbody></table>
 <h3 id='get-company'>Get Company</h3>
 <blockquote>
-<p>Sample Request:  </p>
+<p>Sample Request:</p>
 </blockquote>
 <pre class="highlight http tab-http"><code><span class="nf">GET</span> <span class="nn">/api/v0/companies/{company_id}</span> <span class="k">HTTP</span><span class="o">/</span><span class="m">1.1</span>
 <span class="na">Host</span><span class="p">:</span> <span class="s">{deployment}.api.accelo.com</span>
@@ -7900,7 +7900,7 @@ values, for a given company. This object contains:</p>
 parameter.</p>
 <h3 id='list-companies'>List Companies</h3>
 <blockquote>
-<p>Sample Request:  </p>
+<p>Sample Request:</p>
 </blockquote>
 <pre class="highlight http tab-http"><code><span class="nf">GET</span> <span class="nn">/api/v0/companies</span> <span class="k">HTTP</span><span class="o">/</span><span class="m">1.1</span>
 <span class="na">Host</span><span class="p">:</span> <span class="s">{deployment}.api.accelo.com</span>
@@ -7909,7 +7909,7 @@ parameter.</p>
  https://<span class="o">{</span>deployment<span class="o">}</span>.api.accelo.com/api/v0/companies/ <span class="se">\</span>
   -H <span class="s1">'authorization: Bearer {access_token}'</span>
 </code></pre>
-<p><code>GET /companies</code>  </p>
+<p><code>GET /companies</code></p>
 
 <p>This request returns a list of <a href="#the-company-object">companies</a> from the Accelo deployment.</p>
 <h4 id='configuring-the-response-2'>Configuring the Response</h4><h5 id='pagination'>Pagination</h5>
@@ -8086,7 +8086,7 @@ fields:</p>
 fields requested through <code>_fields</code>, and displayed according to any pagination parameters, filters, or searches used.</p>
 <h3 id='count-companies'>Count Companies</h3>
 <blockquote>
-<p>Sample Request:    </p>
+<p>Sample Request:</p>
 </blockquote>
 <pre class="highlight http tab-http"><code><span class="nf">GET</span> <span class="nn">/api/v0/companies/count</span> <span class="k">HTTP</span><span class="o">/</span><span class="m">1.1</span>
 <span class="na">Host</span><span class="p">:</span> <span class="s">{deployment}.api.accelo.com</span>
@@ -8115,7 +8115,7 @@ or filters this will be a count of all companies on the deployment. This request
 </tbody></table>
 <h3 id='list-recent-companies'>List Recent Companies</h3>
 <blockquote>
-<p>Sample Request:  </p>
+<p>Sample Request:</p>
 </blockquote>
 <pre class="highlight http tab-http"><code><span class="nf">GET</span> <span class="nn">/api/v0/companies/recent</span> <span class="k">HTTP</span><span class="o">/</span><span class="m">1.1</span>
 <span class="na">Host</span><span class="p">:</span> <span class="s">{deployment}.api.accelo.com</span>
@@ -8126,7 +8126,7 @@ or filters this will be a count of all companies on the deployment. This request
 </code></pre>
 <p><code>GET /companies/recent</code></p>
 
-<p>Equivalent request:  </p>
+<p>Equivalent request:</p>
 
 <p><code>GET /companies?_filters=order_by_desc(date_created)</code></p>
 <pre class="highlight http tab-http"><code><span class="nf">GET</span> <span class="nn">/api/v0/companies/recent</span> <span class="k">HTTP</span><span class="o">/</span><span class="m">1.1</span>
@@ -8143,7 +8143,7 @@ ordered in descending order of <code>date_created</code></p>
 fields requested through <code>_fields</code>, and displayed according to any pagination parameters, filters, or searches used.</p>
 <h3 id='list-latest-modified-companies'>List Latest Modified Companies</h3>
 <blockquote>
-<p>Sample Request:  </p>
+<p>Sample Request:</p>
 </blockquote>
 <pre class="highlight http tab-http"><code><span class="nf">GET</span> <span class="nn">/api/v0/companies/newest</span> <span class="k">HTTP</span><span class="o">/</span><span class="m">1.1</span>
 <span class="na">Host</span><span class="p">:</span> <span class="s">{deployment}.api.accelo.com</span>
@@ -8171,7 +8171,7 @@ ordered in descending order of <code>date_modified</code></p>
 fields requested through <code>_fields</code>, and displayed according to any pagination parameters, filters, or searches used.</p>
 <h3 id='get-a-company-39-s-status'>Get a Company&#39;s Status</h3>
 <blockquote>
-<p>Sample Request:  </p>
+<p>Sample Request:</p>
 </blockquote>
 <pre class="highlight http tab-http"><code><span class="nf">GET</span> <span class="nn">/api/v0/companies/{company_id}/status</span> <span class="k">HTTP</span><span class="o">/</span><span class="m">1.1</span>
 <span class="na">Host</span><span class="p">:</span> <span class="s">{deployment}.api.accelo.com</span>
@@ -8190,7 +8190,7 @@ fields requested through <code>_fields</code>, and displayed according to any pa
 <p>The response will be a single status object with its default fields and any additional fields requested via <code>_fields</code>.</p>
 <h3 id='list-company-statuses'>List Company Statuses</h3>
 <blockquote>
-<p>Sample Request:  </p>
+<p>Sample Request:</p>
 </blockquote>
 <pre class="highlight http tab-http"><code><span class="nf">GET</span> <span class="nn">/api/v0/companies/statuses</span> <span class="k">HTTP</span><span class="o">/</span><span class="m">1.1</span>
 <span class="na">Host</span><span class="p">:</span> <span class="s">{deployment}.api.accelo.com</span>
@@ -8316,7 +8316,7 @@ the <a href="#configuring-the-response-fields"><code>_fields</code></a> paramete
 </code></pre>
 <p><code>GET /companies/statuses/count</code></p>
 
-<p>This request will return a count of company statuses in a list defined by any available searches or filters. 
+<p>This request will return a count of company statuses in a list defined by any available searches or filters.
 With no searches or filters this will be a count of all company statuses on the deployment. This request returns a single field:</p>
 
 <table><thead>
@@ -8334,7 +8334,7 @@ With no searches or filters this will be a count of all company statuses on the 
 </tbody></table>
 <h3 id='get-main-contact'>Get Main Contact</h3>
 <blockquote>
-<p>Sample Request:  </p>
+<p>Sample Request:</p>
 </blockquote>
 <pre class="highlight http tab-http"><code><span class="nf">GET</span> <span class="nn">/api/v0/companies/{company_id}/contact</span> <span class="k">HTTP</span><span class="o">/</span><span class="m">1.1</span>
 <span class="na">Host</span><span class="p">:</span> <span class="s">{deployment}.api.accelo.com</span>
@@ -8355,7 +8355,7 @@ associated with the company&#39;s <code>default_affiliation</code>.</p>
 <code>_fields</code>.</p>
 <h3 id='list-contacts-against-a-company'>List Contacts Against a Company</h3>
 <blockquote>
-<p>Sample Request:  </p>
+<p>Sample Request:</p>
 </blockquote>
 <pre class="highlight http tab-http"><code><span class="nf">GET</span> <span class="nn">/api/v0/companies/{company_id}/contacts</span> <span class="k">HTTP</span><span class="o">/</span><span class="m">1.1</span>
 <span class="na">Host</span><span class="p">:</span> <span class="s">{deployment}.api.accelo.com</span>
@@ -8371,7 +8371,7 @@ associated with the company&#39;s <code>default_affiliation</code>.</p>
 <p>This request may be configured and handled as per <a href="#list-contacts"><code>GET /contacts</code></a></p>
 <h3 id='count-contacts-on-a-company'>Count Contacts on a Company</h3>
 <blockquote>
-<p>Sample Request:  </p>
+<p>Sample Request:</p>
 </blockquote>
 <pre class="highlight http tab-http"><code><span class="nf">GET</span> <span class="nn">/api/v0/companies/{company_id}/contacts/count</span> <span class="k">HTTP</span><span class="o">/</span><span class="m">1.1</span>
 <span class="na">Host</span><span class="p">:</span> <span class="s">{deployment}.api.accelo.com</span>
@@ -8401,7 +8401,7 @@ field:</p>
 </tbody></table>
 <h3 id='list-managers'>List Managers</h3>
 <blockquote>
-<p>Sample Request:  </p>
+<p>Sample Request:</p>
 </blockquote>
 <pre class="highlight http tab-http"><code><span class="nf">GET</span> <span class="nn">/api/v0/companies/{company_id}/managers</span> <span class="k">HTTP</span><span class="o">/</span><span class="m">1.1</span>
 <span class="na">Host</span><span class="p">:</span> <span class="s">{deployment}.api.accelo.com</span>
@@ -8417,7 +8417,7 @@ field:</p>
 <p>This request may be configured and handled a per <a href="#list-staff"><code>GET /staff</code></a></p>
 <h3 id='list-a-company-39-s-segmentations'>List A Company&#39;s Segmentations</h3>
 <blockquote>
-<p>Sample Request:   </p>
+<p>Sample Request:</p>
 </blockquote>
 <pre class="highlight http tab-http"><code><span class="nf">GET</span> <span class="nn">/api/v0/companies/{company_id}/segmentations</span> <span class="k">HTTP</span><span class="o">/</span><span class="m">1.1</span>
 <span class="na">Host</span><span class="p">:</span> <span class="s">{deployment}.api.accelo.com</span>
@@ -8435,7 +8435,7 @@ field:</p>
 This request takes no parameters and returns a list of segmentations.</p>
 
 <blockquote>
-<p>Sample response:  </p>
+<p>Sample response:</p>
 </blockquote>
 <pre class="highlight json tab-json"><code><span class="p">{</span><span class="w">
   </span><span class="s2">"meta"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
@@ -8515,7 +8515,7 @@ using the <a href="#configuring-the-response-fields"><code>_fields</code></a> pa
 through <code>_fields</code>.</p>
 <h3 id='create-a-company'>Create a Company</h3>
 <blockquote>
-<p>Sample request:  </p>
+<p>Sample request:</p>
 </blockquote>
 <pre class="highlight http tab-http"><code><span class="nf">POST</span> <span class="nn">/api/v0/companies/{company_id}</span> <span class="k">HTTP</span><span class="o">/</span><span class="m">1.1</span>
 <span class="na">Host</span><span class="p">:</span> <span class="s">{deployment}.api.accelo.com</span>
@@ -8595,7 +8595,7 @@ using the <a href="#configuring-the-response-fields"><code>_fields</code></a> pa
 <code>_fields</code>.</p>
 <h3 id='add-a-manager'>Add a Manager</h3>
 <blockquote>
-<p>Sample Request:  </p>
+<p>Sample Request:</p>
 </blockquote>
 <pre class="highlight http tab-http"><code><span class="nf">POST</span> <span class="nn">/api/v0/companies/{company_id}</span> <span class="k">HTTP</span><span class="o">/</span><span class="m">1.1</span>
 <span class="na">Host</span><span class="p">:</span> <span class="s">{deployment}.api.accelo.com</span>
@@ -8638,7 +8638,7 @@ identified by its unique <code>company_id</code>. The request returns a list of 
 <p>This response may be configured and handled in the same way as <a href="#list-managers"><code>GET /companies/{company_id}/managers</code></a>.</p>
 <h3 id='remove-a-company'>Remove a Company</h3>
 <blockquote>
-<p>Sample Request:  </p>
+<p>Sample Request:</p>
 </blockquote>
 <pre class="highlight http tab-http"><code><span class="nf">DELETE</span> <span class="nn">/api/v0/companies/{company_id}</span> <span class="k">HTTP</span><span class="o">/</span><span class="m">1.1</span>
 <span class="na">Host</span><span class="p">:</span> <span class="s">{deployment}.api.accelo.com</span>
@@ -8653,7 +8653,7 @@ identified by its unique <code>company_id</code>. The request returns a list of 
 parameters and returns no resource.</p>
 <h3 id='remove-a-manager'>Remove a Manager</h3>
 <blockquote>
-<p>Sample Request:  </p>
+<p>Sample Request:</p>
 </blockquote>
 <pre class="highlight http tab-http"><code><span class="nf">DELETE</span> <span class="nn">/api/v0/companies/{company_id}</span> <span class="k">HTTP</span><span class="o">/</span><span class="m">1.1</span>
 <span class="na">Host</span><span class="p">:</span> <span class="s">{deployment}.api.accelo.com</span>
@@ -8694,7 +8694,7 @@ can have multiple relationships with the same company. Hence this request takes 
 <p><code>GET /companies/{company_id}/profiles/values</code></p>
 
 <p>This request returns a list of <a href="#the-profile-value-object">profile field values</a> of a <a href="#the-company-object">company</a>,
-specified by its <code>company_id</code>. This is the request <a href="#retrieve-a-list-of-profile-values"><code>GET /{object}/{object_id}/profiles/values</code></a>, 
+specified by its <code>company_id</code>. This is the request <a href="#retrieve-a-list-of-profile-values"><code>GET /{object}/{object_id}/profiles/values</code></a>,
 where the object is &quot;companies&quot; and whose id is <code>{company_id}</code>.</p>
 <h3 id='list-all-profile-field-values-on-a-company'>List all Profile Field Values on a Company</h3>
 <blockquote>
@@ -8703,7 +8703,7 @@ where the object is &quot;companies&quot; and whose id is <code>{company_id}</co
 
 <p><code>GET /companies/profiles/values</code></p>
 
-<p>This request returns a list of all <a href="#the-profile-value-object">profile field values</a> on <a href="#the-company-object">companies</a>. 
+<p>This request returns a list of all <a href="#the-profile-value-object">profile field values</a> on <a href="#the-company-object">companies</a>.
 This is the request <a href="#list-profile-values"><code>GET /{object}/profiles/values</code></a>, where the object is &quot;companies&quot;.</p>
 <h3 id='list-company-profile-fields'>List Company Profile Fields</h3>
 <blockquote>
@@ -8712,7 +8712,7 @@ This is the request <a href="#list-profile-values"><code>GET /{object}/profiles/
 
 <p><code>GET /companies/profiles/fields</code></p>
 
-<p>This request returns a list of <a href="#the-profile-field-object">profile fields</a> available for <a href="#the-company-object">companies</a>. 
+<p>This request returns a list of <a href="#the-profile-field-object">profile fields</a> available for <a href="#the-company-object">companies</a>.
 This is the request <a href="#retrieve-a-list-of-profile-fields"><code>GET /{object}/profiles/fields</code></a> where the object is &quot;companies&quot;.</p>
 <h3 id='update-a-profile-field-value-on-a-company'>Update a Profile Field Value on a Company</h3>
 <blockquote>
@@ -8732,7 +8732,7 @@ of a particular <a href="#the-company-object">company</a>, identified by its <co
 
 <p><code>POST /companies/{company_id}/profiles/{profile_field_id}</code></p>
 
-<p>This request sets and returns a <a href="#the-profile-value-object">profile value</a> for a <a href="#the-profile-field-object">profile field</a>, 
+<p>This request sets and returns a <a href="#the-profile-value-object">profile value</a> for a <a href="#the-profile-field-object">profile field</a>,
 specified by its <code>profile_field_id</code>, for a <a href="#the-company-object">company</a>, specified by its <code>company_id</code>. This
 is the request <a href="#update-a-profile-value-link"><code>POST /{object}/{object_id}/profiles/fields/{profile_field_id}</code></a> where is
 object is &quot;companies&quot; and whose id is <code>{company_id}</code></p>
@@ -8744,7 +8744,7 @@ object is &quot;companies&quot; and whose id is <code>{company_id}</code></p>
 <p><code>GET /companies/{company_id}/progressions</code></p>
 
 <p>This request returns a list of available <a href="#progressions">progressions</a> for a <a href="#the-company-object">company</a> identified
-by its <code>company_id</code>. This is the request <a href="#retrieve-a-list-of-available-progressions"><code>GET /{object}/{object_id}/progressions</code></a> 
+by its <code>company_id</code>. This is the request <a href="#retrieve-a-list-of-available-progressions"><code>GET /{object}/{object_id}/progressions</code></a>
 where the object is &quot;companies&quot; whose id is <code>{company_id}</code></p>
 <h3 id='auto-run-a-progression-on-a-company'>Auto Run a Progression on a Company</h3>
 <blockquote>
@@ -8759,7 +8759,7 @@ where the object is &quot;companies&quot; whose id is <code>{company_id}</code><
 where the object is &quot;companies&quot; whose id is <code>{company_id}</code>.</p>
 <h3 id='list-addresses-against-a-company'>List Addresses against a Company</h3>
 <blockquote>
-<p>Sample Request:  </p>
+<p>Sample Request:</p>
 </blockquote>
 
 <p><code>GET /companies/{company_id}/addresses</code></p>
@@ -8785,7 +8785,7 @@ This is the request <a href="#create-an-address-against-an-object"><code>POST /{
 <p><code>GET /companies/{company_id}/collections</code></p>
 
 <p>This request returns a list of <a href="#resources">collections</a> against a <a href="#the-company-object">company</a>, specified by its
-<code>company_id</code>. This is the request <a href="#retrieve-an-array-of-collections-for-an-object"><code>GET /{object}/{object_id}/collections</code></a> 
+<code>company_id</code>. This is the request <a href="#retrieve-an-array-of-collections-for-an-object"><code>GET /{object}/{object_id}/collections</code></a>
 where the object is &quot;companies&quot; and whose id is <code>{company_id}</code>.</p>
 <h3 id='upload-a-resource-attachment-to-a-collection-on-a-company'>Upload a Resource (Attachment) to a Collection on a Company</h3>
 <blockquote>
@@ -8794,7 +8794,7 @@ where the object is &quot;companies&quot; and whose id is <code>{company_id}</co
 
 <p><code>POST /companies/{company_id}/collections/{collection_id}/resources</code></p>
 
-<p>This request uploads a <a href="#resources">resource</a> to a collection, specified by its <code>collection_id</code>, of a <a href="#the-company-object">company</a> 
+<p>This request uploads a <a href="#resources">resource</a> to a collection, specified by its <code>collection_id</code>, of a <a href="#the-company-object">company</a>
 specified by its <code>company_id</code>. This is the request
 <a href="#upload-a-resource-to-a-collection-of-an-object"><code>POST/{object}/{object_id}/collections/{collection_id}/resources</code></a>
 where the object is &quot;companies&quot; and whose id is <code>{company_id}</code>.</p>
@@ -17660,9 +17660,9 @@ where the object is &quot;milestones&quot; whose id is <code>milestone_id</code>
 specified by its <code>milestone_id</code>. This is the request 
 <a href="#run-a-status-update-using-a-given-progression"><code>[POST|PUT]/{object}/{object_id}/progressions/{progression_id}/auto</code></a> 
 where theobject is &quot;milestone&quot; whose id is <code>milestone_id</code>.</p>
-<h2 id='object-budgets'>Object Budgets</h2>
+<h2 id='object-budgets-yeah-again'>Object Budgets yeah again</h2>
 <blockquote>
-<p>Resource URI:<br>
+<p>Resource URI:
 <code>api/v0/object_budgets</code></p>
 </blockquote>
 
