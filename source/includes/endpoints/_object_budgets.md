@@ -1,4 +1,4 @@
-## Object Budgets yeah
+## Object Budgets yeah again
 > Resource URI:
 `api/v0/object_budgets`
 
